@@ -10,7 +10,6 @@ username=cryomics
 
 #login to PATRIC
 p3-login $username
-#Seaicemicrobiology1
 
 #project
 project=Colwellia
