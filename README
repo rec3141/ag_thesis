@@ -1,1 +1,5 @@
-
+1) patric_annotation.sh # upload assemblies to PATRIC, download annotations
+2) growthrates_intro.r # calculate growth rates from plate reader XLS file
+3) ratk.r # predict optimal growth temperature using Ratkowsky 1983 model
+4) index_functions.r # functions to calculate amino acid indices
+5) merge_patric_indices.r # merge growth rate predictions and amino acid indices
