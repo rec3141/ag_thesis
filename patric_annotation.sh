@@ -11,8 +11,9 @@ username=cryomics
 #login to PATRIC
 p3-login $username
 
-#project
+#make new project directory
 project=Colwellia
+p3-mkdir /$username@patricbrc.org/home/$project
 
 #make new directory on PATRIC workspace
 newdir="new_assembly"
