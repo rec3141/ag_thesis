@@ -5,13 +5,27 @@ library(minpack.lm)
 # read in data
 grd = read.table("growthrates.tsv",sep="\t")
 
+biospec = read.csv("pone.0153343.s004.csv")
+biospec$rate.per.day = 1440*biospec$rate.per.minute
+
+genome.list = as.character(unique(biospec$binomial.name[grepl("Colwellia",biospec$binomial.name)]))
+
+biogrd = biospec[biospec$binomial.name %in% genome.list,]
+biogrd = data.frame("strain"=biogrd$binomial.name,
+                    "replicate"="OD1",
+                    "temp"=biogrd$T.C,
+                    "mumax"=biogrd$rate.per.day,
+                    "r2"=0.99)
+
+grd = rbind(grd,biogrd)
+
 colnames(grd) = c("strain","rep","temp","rate","r2")
 grd$temp = as.numeric(as.character(grd$temp)) + 273 #calculate Kelvin temperature
 grd$sqrate = sqrt(grd$rate) #Ratkowsky uses square root of rate
 grd = na.omit(grd)
 grd$sqperday = sqrt(grd$rate*24) #convert to 1/day from 1/hour
 grd$weights = -1*log10(1-grd$r2) #calculate weights based on R^2 values
-  
+
 
 # rT = (cc * (T - T1)(1 - exp( k * (T - T2))))^2
 # Ratkowsky et al. 1983 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC217594
@@ -79,7 +93,7 @@ for(i in 1:length(unique(grd$strain))) {
   # plot rates
   plot(sgrd$temp - 273,sgrd$sqperday^2, pch=21, col="black", bg=i,
        xlim=c(-10,30), 
-       ylim=c(0,1.8),
+       # ylim=c(0,1.8),
        xlab = "Temperature (°C)", ylab = "Growth Rate (1/day)",
        cex = sgrd$weights)
   
@@ -134,3 +148,4 @@ dev.off()
 rownames(init.save) = unique(grd$strain)
 colnames(init.save) = c("b", "Tmin", "c", "Tmax", "topt")
 write.table(x=init.save,file="rat83_params.tsv",sep="\t",quote=F)
+
