@@ -20,6 +20,7 @@ treefile="colwellia80+_100_treeWithGenomeIds.nwk"
 
 # read PATRIC genome metadata table
 genomes = read.table(paste0(genus,"_patric_data.tsv"),fill=T,head=T,sep="\t",colClasses="character")
+rownames(genomes) = genomes$genome.genome_id
 
 # read PATRIC genome features table
 colfeat = read.table(
@@ -58,7 +59,7 @@ id.biospec = melt(sapply(rownames(ratk),function(x) which(grepl(paste0(x," "),pe
 ids = rbind(id.strains,id.biospec)
 ratk = ratk[ids$L1,]
 ratk$id.patric = genomes$genome.genome_id[ids$value]
-ratk = ratk[complete.cases(ratk),]
+ratk = ratk[complete.cases(ratk[,c("topt","id.patric")]),]
 
 # setup colors we'll use later
 cols = rev(brewer.pal(11, "RdBu"))
@@ -195,7 +196,7 @@ for(j in 1:length(colsave)) {
     }
     
     # rename by nice genome name
-    colnames(matsmall) = genomes$genome.genome_name[match(colnames(matsmall),genomes$genome.genome_id)]
+    colnames(matsmall) = genomes[colnames(matsmall),"genome.genome_name"]
     
     # plot heatmap
     heatmap.2(as.matrix(t(matsmall)), RowSideColors = rowcols, Rowv = dend1, scale = "none",trace="none", cexCol=0.2,margins=c(8,16), col=viridis, main=names(colsave)[j])

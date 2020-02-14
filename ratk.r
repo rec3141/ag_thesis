@@ -117,7 +117,9 @@ for(i in 1:length(unique(grd$strain))) {
                algorithm = "port", trace = FALSE, control = list(maxiter=1000, tol=1e-6, minFactor=1e-5, printEval = TRUE, warnOnly = TRUE))
     
   }
+    }, silent=TRUE)
 
+  if(!is.null(rt)) {
   # finish plotting
   rtco = as.data.frame(t(coef(rt)))
   
@@ -131,12 +133,14 @@ for(i in 1:length(unique(grd$strain))) {
   
   topt = round(xs[which.max(rt.fit)],2)
   
-
-  }, silent=TRUE)
-  
   # save fitted parameters
   init.save[i,] = c(b.est, Tmin.est, c.est, Tmax.est, topt)
   
+  } else {
+    topt = sgrd$temp[which.max(sgrd$sqperday)]-273
+    init.save[i,] = c(NA, NA, NA, NA, topt)
+  }
+  print(init.save[i,])
   # add title to plot (keep outside of try{})
   title(paste0(strn," (Topt = ",topt," °C)"))
   
@@ -145,7 +149,7 @@ for(i in 1:length(unique(grd$strain))) {
 dev.off()
 
 # output fitted parameters
-rownames(init.save) = unique(grd$strain)
+rownames(init.save) = sort(unique(grd$strain))
 colnames(init.save) = c("b", "Tmin", "c", "Tmax", "topt")
 write.table(x=init.save,file="rat83_params.tsv",sep="\t",quote=F)
 
