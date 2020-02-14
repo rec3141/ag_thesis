@@ -340,6 +340,7 @@ for(j in 1:length(colsave)) {
   plot(corout$r,log10(corout$p.value),pch=19,col=rgb(0,0,1,0.3), main=names(colsave)[j])
   lines(x=c(-1,1),y=c(log10(pmin),log10(pmin)))
 
+  corout = corout[order(corout$r,corout$p.value),]
   getgenes = rownames(corout)[which(corout$p.value<pmin)]
   if(length(getgenes)<1) next
   

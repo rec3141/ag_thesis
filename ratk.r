@@ -6,7 +6,7 @@ library(minpack.lm)
 grd = read.table("growthrates.tsv",sep="\t")
 
 biospec = read.csv("pone.0153343.s004.csv")
-biospec$rate.per.day = 1440*biospec$rate.per.minute
+biospec$rate.per.hour = 60*biospec$rate.per.minute
 
 genome.list = as.character(unique(biospec$binomial.name[grepl("Colwellia",biospec$binomial.name)]))
 
@@ -14,7 +14,7 @@ biogrd = biospec[biospec$binomial.name %in% genome.list,]
 biogrd = data.frame("strain"=biogrd$binomial.name,
                     "replicate"="OD1",
                     "temp"=biogrd$T.C,
-                    "mumax"=biogrd$rate.per.day,
+                    "mumax"=biogrd$rate.per.hour,
                     "r2"=0.99)
 
 grd = rbind(grd,biogrd)
