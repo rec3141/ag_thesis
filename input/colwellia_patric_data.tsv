@@ -1,95 +1,95 @@
 genome.genome_id	genome.genome_name	genome.genome_status	genome.sequences	genome.patric_cds	genome.isolation_country	genome.host_name	genome.disease	genome.collection_year	genome.completion_date
-28228.1	Colwellia 12G3	WGS		4399					
 28228.11	Colwellia 75C3	WGS		4654					
-329993.4	Colwellia aestuarii strain CGMCC1.6965	WGS		3928					2017-04-21T00:00:00Z
-329993.3	Colwellia aestuarii strain KCTC 12480	WGS		3931	South Korea			2016	2017-02-15T00:00:00Z
 28228.12	Colwellia Bg11-28	WGS		4742					
 28228.9	Colwellia Bg11-28	WGS		4953					
-641665.3	Colwellia chukchiensis strain CGMCC 1.9127	WGS		3817					2016-10-29T00:00:00Z
-641665.4	Colwellia chukchiensis strain CGMCC1.9127	WGS		3805					2017-04-21T00:00:00Z
-89401.3	Colwellia demingiae strain ACAM 459	WGS		4685	Antarctica			1993	2019-08-10T00:00:00Z
-89402.5	Colwellia hornerae strain ACAM 607	WGS		3977	Antarctica			1993	2019-08-10T00:00:00Z
-89402.4	Colwellia hornerae strain IC036	WGS		3987	Antarctica			2001	2019-08-10T00:00:00Z
-89402.3	Colwellia hornerae strain IC037	WGS		3973	Antarctica			2001	2019-08-10T00:00:00Z
-1513592.3	Colwellia marinimaniae strain MTCD1	WGS		4312	United States			2012	2017-06-07T00:00:00Z
-1888913.3	Colwellia mytili strain KCTC 52417	WGS		4069		Mussel			2017-04-21T00:00:00Z
-1265503.3	Colwellia piezophila ATCC BAA-637	WGS		4730				2001	2013-04-22T00:00:00Z
-326537.3	Colwellia polaris strain MCCC1C00015	WGS		3908				2003	2017-04-21T00:00:00Z
-167879.5	Colwellia psychrerythraea 34H	Complete		4610					2005-07-26T00:00:00Z
+28229.11	Colwellia psychrerythraea strain Glo_19	WGS		7384	Sweden	Globobulimina		2015	2018-08-02T00:00:00Z
 28229.3	Colwellia psychrerythraea GAB14E	WGS		4799	Australia			2012	2014-10-06T00:00:00Z
 28229.4	Colwellia psychrerythraea ND2E	WGS		4510	Greece			2012	2014-10-06T00:00:00Z
 28229.6	Colwellia psychrerythraea strain 38_32_sub10_T18	WGS		4110	United States			2013	2017-05-31T00:00:00Z
-28229.11	Colwellia psychrerythraea strain Glo_19	WGS		7384	Sweden	Globobulimina		2015	2018-08-02T00:00:00Z
-1820336.3	Colwellia sediminilitoris strain KCTC 52213	WGS		3410					2017-04-21T00:00:00Z
-2058299.3	Colwellia sp. 12G3	WGS		4432				2002	2017-12-12T00:00:00Z
-2689569.3	Colwellia sp. 20A7	Complete		4041				2017	2020-01-07T00:00:00Z
-1856279.3	Colwellia sp. 39_35_sub15_T18 strain 39_35_sub15_T18	WGS		3804	United States			2013	2017-05-31T00:00:00Z
+56799.10	Colwellia sp. strain UBA8680	WGS		2370					2018-09-10T00:00:00Z
+56799.11	Colwellia sp. strain UBA8227	WGS		3633					2018-09-10T00:00:00Z
+56799.4	Colwellia sp. strain NORP29	WGS		3739	Atlantic Ocean			2014	2017-10-26T00:00:00Z
+56799.5	Colwellia sp. strain NORP5	WGS		7413	Atlantic Ocean			2014	2017-10-26T00:00:00Z
+56799.6	Colwellia sp. strain bin20	WGS		2081	United States			2013	2018-07-17T00:00:00Z
+56799.7	Colwellia sp. strain bin21	WGS		2629	United States			2013	2018-07-17T00:00:00Z
+56799.8	Colwellia sp. strain Glo_8	WGS		5046	Sweden	Globobulimina		2015	2018-08-02T00:00:00Z
+56799.9	Colwellia sp. strain UBA10809	WGS		5159					2018-09-10T00:00:00Z
+58049.4	Colwellia sp. MT41	Complete		3951		Hirondellea gigas		1978	2015-11-17T00:00:00Z
+89401.3	Colwellia demingiae strain ACAM 459	WGS		4685	Antarctica			1993	2019-08-10T00:00:00Z
+89402.3	Colwellia hornerae strain IC037	WGS		3973	Antarctica			2001	2019-08-10T00:00:00Z
+89402.4	Colwellia hornerae strain IC036	WGS		3987	Antarctica			2001	2019-08-10T00:00:00Z
+89402.5	Colwellia hornerae strain ACAM 607	WGS		3977	Antarctica			1993	2019-08-10T00:00:00Z
+167879.5	Colwellia psychrerythraea 34H	Complete		4610					2005-07-26T00:00:00Z
+326537.3	Colwellia polaris strain MCCC1C00015	WGS		3908				2003	2017-04-21T00:00:00Z
+329993.3	Colwellia aestuarii strain KCTC 12480	WGS		3931	South Korea			2016	2017-02-15T00:00:00Z
+329993.4	Colwellia aestuarii strain CGMCC1.6965	WGS		3928					2017-04-21T00:00:00Z
+641665.3	Colwellia chukchiensis strain CGMCC 1.9127	WGS		3817					2016-10-29T00:00:00Z
+641665.4	Colwellia chukchiensis strain CGMCC1.9127	WGS		3805					2017-04-21T00:00:00Z
 888425.3	Colwellia sp. 75C3	WGS		4670				2002	2017-12-12T00:00:00Z
+1265503.3	Colwellia piezophila ATCC BAA-637	WGS		4730				2001	2013-04-22T00:00:00Z
 1380381.3	Colwellia sp. 8_GOM-1096m	WGS		3795					2014-06-25T00:00:00Z
-1982103.3	Colwellia sp. A3T	WGS		3470	Denmark	Strongylocentrotus droebachiensis (sea urchin)		2015	2017-12-15T00:00:00Z
-2497879.3	Colwellia sp. Arc7-635	Complete		4264				2016	2018-12-26T00:00:00Z
-2161872.4	Colwellia sp. Arc7-D	Complete		3842				2016	2018-05-18T00:00:00Z
-2058305.3	Colwellia sp. Bg11-28	WGS		4811	United States			2014	2017-12-12T00:00:00Z
-2267621.3	Colwellia sp. Bin11-node4	WGS		3460	Brazil			2016	2018-07-21T00:00:00Z
+1513592.3	Colwellia marinimaniae strain MTCD1	WGS		4312	United States			2012	2017-06-07T00:00:00Z
+1718921.3	Colwellia sp. MT2012	WGS		4046		Hirondellea gigas		2012	2015-11-05T00:00:00Z
+1720342.3	Colwellia sp. TT2012	WGS		4307				2012	2015-11-06T00:00:00Z
+1795872.3	Colwellia sp. Phe_37	WGS		3091	United States			2010	2016-02-23T00:00:00Z
 1816218.16	Colwellia sp. BRX10-1	WGS		4194					
 1816218.17	Colwellia sp. BRX10-2	WGS		4180					
-1967665.5	Colwellia sp. BRX10-3	WGS		3464					
 1816218.18	Colwellia sp. BRX10-4	WGS		4342					
 1816218.19	Colwellia sp. BRX10-5	WGS		4164					
-1816218.28	Colwellia sp. BRX10-6	WGS		3932					
-1816218.2	Colwellia sp. BRX10-7	WGS		4173					
+1816218.20	Colwellia sp. BRX10-7	WGS		4173					
 1816218.21	Colwellia sp. BRX10-9	WGS		4144					
-1816218.29	Colwellia sp. BRX8-2	WGS		4215					
-1816218.3	Colwellia sp. BRX8-3	WGS		4188					
 1816218.22	Colwellia sp. BRX8-4	WGS		4026					
 1816218.23	Colwellia sp. BRX8-5	WGS		4166					
 1816218.24	Colwellia sp. BRX8-6	WGS		4148					
 1816218.25	Colwellia sp. BRX8-7	WGS		4127					
-1816218.31	Colwellia sp. BRX8-8	WGS		4567					
 1816218.26	Colwellia sp. BRX8-9	WGS		4223					
 1816218.27	Colwellia sp. BRX9-1	WGS		4067					
-2508879.3	Colwellia sp. C1TZA3	WGS		4138	Antarctica			1993	2019-08-10T00:00:00Z
-2011145.3	Colwellia sp. ESRF-bin12	WGS		3868	Atlantic Ocean			2013	2017-10-23T00:00:00Z
-2011152.3	Colwellia sp. ESRF-bin23	WGS		1548	Atlantic Ocean			2013	2017-10-23T00:00:00Z
-2011157.3	Colwellia sp. ESRF-bin71	WGS		3119	Atlantic Ocean			2013	2017-10-23T00:00:00Z
-2011151.3	Colwellia sp. ESRF-bin9	WGS		1915	Atlantic Ocean			2013	2017-10-23T00:00:00Z
-1967665.11	Colwellia sp. MB02u-1	WGS		3744					
-1967665.6	Colwellia sp. MB02u-19	WGS		3730					
-1967665.7	Colwellia sp. MB3u-4	WGS		3774					
-1967665.8	Colwellia sp. MB3u-8	WGS		4139					
+1816218.28	Colwellia sp. BRX10-6	WGS		3932					
+1816218.29	Colwellia sp. BRX8-2	WGS		4215					
+1816218.30	Colwellia sp. BRX8-3	WGS		4188					
+1816218.3	Colwellia sp. PAMC 20917	Complete		4170	Norway			2015	2016-10-18T00:00:00Z
+1816218.31	Colwellia sp. BRX8-8	WGS		4567					
 1816218.32	Colwellia sp. MB3u-22	WGS		5856					
 1816218.33	Colwellia sp. MB3u-28	WGS		4317					
 1816218.34	Colwellia sp. MB3u-41	WGS		4315					
-1967665.1	Colwellia sp. MB3u-43	WGS		3724					
-1967665.9	Colwellia sp. MB3u-45	WGS		3720					
 1816218.35	Colwellia sp. MB3u-55	WGS		4269					
 1816218.36	Colwellia sp. MB3u-64	WGS		4464					
-1967665.13	Colwellia sp. MB02u-6	WGS		3644					
-1967665.12	Colwellia sp. MB3u-70	WGS		4146					
 1816218.37	Colwellia sp. Bg11-12	WGS		3930					
 1816218.38	Colwellia sp. MB02u-7	WGS		4471					
+1816218.39	Colwellia sp. MB02u-11	WGS		4541					
+1816218.40	Colwellia sp. MB02u-14	WGS		4243					
+1816219.4	Colwellia sp. PAMC 21821 strain PAMC 21821	Complete		4236	Antarctica			2015	2017-04-03T00:00:00Z
+1820336.3	Colwellia sediminilitoris strain KCTC 52213	WGS		3410					2017-04-21T00:00:00Z
+1856279.3	Colwellia sp. 39_35_sub15_T18 strain 39_35_sub15_T18	WGS		3804	United States			2013	2017-05-31T00:00:00Z
+1888913.3	Colwellia mytili strain KCTC 52417	WGS		4069		Mussel			2017-04-21T00:00:00Z
+1911682.3	Colwellia sp. QM50 strain QM50	WGS		4097	China			2000	2017-02-15T00:00:00Z
+1917165.4	Colwellia sp. UCD-KL20 strain UCD-KL20	WGS		3976	United States			2015	2017-01-19T00:00:00Z
+1967665.10	Colwellia sp. MB3u-43	WGS		3724					
+1967665.11	Colwellia sp. MB02u-1	WGS		3744					
+1967665.12	Colwellia sp. MB3u-70	WGS		4146					
+1967665.13	Colwellia sp. MB02u-6	WGS		3644					
 1967665.14	Colwellia sp. MB02u-9	WGS		3815					
 1967665.15	Colwellia sp. MB02u-10	WGS		4105					
-1816218.39	Colwellia sp. MB02u-11	WGS		4541					
 1967665.16	Colwellia sp. MB02u-12	WGS		3716					
-1816218.4	Colwellia sp. MB02u-14	WGS		4243					
 1967665.17	Colwellia sp. MB02u-18	WGS		3721					
-1718921.3	Colwellia sp. MT2012	WGS		4046		Hirondellea gigas		2012	2015-11-05T00:00:00Z
-58049.4	Colwellia sp. MT41	Complete		3951		Hirondellea gigas		1978	2015-11-17T00:00:00Z
 1967665.3	Colwellia sp. NB097-1 strain NB097-1	Complete		4038				2014	2017-04-03T00:00:00Z
+1967665.5	Colwellia sp. BRX10-3	WGS		3464					
+1967665.6	Colwellia sp. MB02u-19	WGS		3730					
+1967665.7	Colwellia sp. MB3u-4	WGS		3774					
+1967665.8	Colwellia sp. MB3u-8	WGS		4139					
+1967665.9	Colwellia sp. MB3u-45	WGS		3720					
+1982103.3	Colwellia sp. A3T	WGS		3470	Denmark	Strongylocentrotus droebachiensis (sea urchin)		2015	2017-12-15T00:00:00Z
+2011145.3	Colwellia sp. ESRF-bin12	WGS		3868	Atlantic Ocean			2013	2017-10-23T00:00:00Z
+2011151.3	Colwellia sp. ESRF-bin9	WGS		1915	Atlantic Ocean			2013	2017-10-23T00:00:00Z
+2011152.3	Colwellia sp. ESRF-bin23	WGS		1548	Atlantic Ocean			2013	2017-10-23T00:00:00Z
+2011157.3	Colwellia sp. ESRF-bin71	WGS		3119	Atlantic Ocean			2013	2017-10-23T00:00:00Z
+2058299.3	Colwellia sp. 12G3	WGS		4432				2002	2017-12-12T00:00:00Z
+2058305.3	Colwellia sp. Bg11-28	WGS		4811	United States			2014	2017-12-12T00:00:00Z
+2161872.4	Colwellia sp. Arc7-D	Complete		3842				2016	2018-05-18T00:00:00Z
+2267621.3	Colwellia sp. Bin11-node4	WGS		3460	Brazil			2016	2018-07-21T00:00:00Z
 2304625.3	Colwellia sp. OISW-25	WGS		3442	South Korea			2016	2019-05-29T00:00:00Z
-1816218.3	Colwellia sp. PAMC 20917	Complete		4170	Norway			2015	2016-10-18T00:00:00Z
-1816219.4	Colwellia sp. PAMC 21821 strain PAMC 21821	Complete		4236	Antarctica			2015	2017-04-03T00:00:00Z
-1795872.3	Colwellia sp. Phe_37	WGS		3091	United States			2010	2016-02-23T00:00:00Z
-1911682.3	Colwellia sp. QM50 strain QM50	WGS		4097	China			2000	2017-02-15T00:00:00Z
 2305464.3	Colwellia sp. RSH04	WGS		3788	China			2017	2018-09-11T00:00:00Z
-56799.6	Colwellia sp. strain bin20	WGS		2081	United States			2013	2018-07-17T00:00:00Z
-56799.7	Colwellia sp. strain bin21	WGS		2629	United States			2013	2018-07-17T00:00:00Z
-56799.8	Colwellia sp. strain Glo_8	WGS		5046	Sweden	Globobulimina		2015	2018-08-02T00:00:00Z
-56799.4	Colwellia sp. strain NORP29	WGS		3739	Atlantic Ocean			2014	2017-10-26T00:00:00Z
-56799.5	Colwellia sp. strain NORP5	WGS		7413	Atlantic Ocean			2014	2017-10-26T00:00:00Z
-56799.9	Colwellia sp. strain UBA10809	WGS		5159					2018-09-10T00:00:00Z
-56799.11	Colwellia sp. strain UBA8227	WGS		3633					2018-09-10T00:00:00Z
-56799.1	Colwellia sp. strain UBA8680	WGS		2370					2018-09-10T00:00:00Z
-1720342.3	Colwellia sp. TT2012	WGS		4307				2012	2015-11-06T00:00:00Z
-1917165.4	Colwellia sp. UCD-KL20 strain UCD-KL20	WGS		3976	United States			2015	2017-01-19T00:00:00Z
+2497879.3	Colwellia sp. Arc7-635	Complete		4264				2016	2018-12-26T00:00:00Z
+2508879.3	Colwellia sp. C1TZA3	WGS		4138	Antarctica			1993	2019-08-10T00:00:00Z
+2689569.3	Colwellia sp. 20A7	Complete		4041				2017	2020-01-07T00:00:00Z
+28228.10	Colwellia 12G3	WGS		4399					
