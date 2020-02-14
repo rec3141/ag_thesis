@@ -10,8 +10,9 @@ username=cryomics
 
 #login to PATRIC
 p3-login $username
+#Seaicemicrobiology1
 
-#make new project directory
+#project
 project=Colwellia
 p3-mkdir /$username@patricbrc.org/home/$project
 
@@ -53,6 +54,10 @@ genus=colwellia
 
 # get all genome features (protein families) for given genus
 p3-all-genomes --eq genus,$genus | p3-get-genome-features --attr patric_id,pgfam_id,plfam_id > "$genus"_features.tsv
+
+# get all protein family data
+cut -f3 "$genus"_features.tsv | sort -u | p3-get-family-data --nohead > "$genus"_families_global.tsv
+cut -f4 "$genus"_features.tsv | sort -u | p3-get-family-data --nohead > "$genus"_families_local.tsv
 
 # get all genome metadata for given genus
 p3-all-genomes --eq genus,$genus | p3-get-genome-data > "$genus"_patric_data.tsv
