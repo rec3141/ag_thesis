@@ -310,7 +310,15 @@ dev.off()
 # requires PATRIC installation
 # may have to change location of PATRIC environment executable
 
-patricapp='/Applications/PATRIC.app//user-env.sh'
+# to work with PATRIC from R
+# patricapp='/Applications/PATRIC.app//user-env.sh'
+# write.table(file="tmp.pat",getgenes,quote=F,col.names = F,row.names = F)
+# genenames = system(paste0("source ",patricapp," > /dev/null && cat tmp.pat | p3-get-family-data --nohead | cut -f4"),intern=TRUE)
+
+plfdat = read.table(paste0(genus,"_families_local.tsv"),sep="\t",row.names = 1, stringsAsFactors=F, quote="",comment="")[,3,drop=F]
+pgfdat = read.table(paste0(genus,"_families_global.tsv"),sep="\t",row.names=1, stringsAsFactors=F, quote="",comment="")[,3,drop=F]
+famdat = rbind(plfdat,pgfdat)
+colnames(famdat) = "description"
 
 pdf(file="volcano.pdf")  
 
@@ -341,13 +349,12 @@ for(j in 1:length(colsave)) {
   plot(corout$r,log10(corout$p.value),pch=19,col=rgb(0,0,1,0.3), main=names(colsave)[j])
   lines(x=c(-1,1),y=c(log10(pmin),log10(pmin)))
 
-  corout = corout[order(corout$r,corout$p.value),]
+  corout = corout[order(corout$r,corout$p.value,decreasing=c(TRUE,FALSE)),]
   getgenes = rownames(corout)[which(corout$p.value<pmin)]
   if(length(getgenes)<1) next
   
-  write.table(file="tmp.pat",getgenes,quote=F,col.names = F,row.names = F)
-  genenames = system(paste0("source ",patricapp," > /dev/null && cat tmp.pat | p3-get-family-data --nohead | cut -f4"),intern=TRUE)
-
+  genenames = famdat[getgenes,"description"]
+  
     for(i in 1:length(getgenes)) {
     k = getgenes[i]
     plot(ogt,ratmat[k,],xlab = "Optimal Growth Temperature", ylab=names(colsave)[j], main=paste0(names(colsave)[j],"\n",k,"\n",genenames[i]), cex.main=0.7)
