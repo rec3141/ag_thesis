@@ -51,7 +51,13 @@ colnames(colout) = gsub(x=colnames(colout),pattern = ".aac.",replacement = "")
 
 # read Ratkowsky fits
 ratk = read.table("rat83_params.tsv",sep="\t",head=T,stringsAsFactors=FALSE)
-ratk$id.patric = genomes$genome.genome_id[sapply(rownames(ratk),function(x) which(grepl(x,genomes$genome.genome_name))[1])]
+# this is not ideal... has to match mixed "-" and ".", Colwellia names followed by a space, and strain names terminating in $
+#need to make a matrix of rownames(ratk) for each patric genome accession, then "join" that with ratk
+id.strains = melt(sapply(rownames(ratk),function(x) which(grepl(paste0(x,"$"),perl = TRUE,genomes$genome.genome_name))))
+id.biospec = melt(sapply(rownames(ratk),function(x) which(grepl(paste0(x," "),perl = TRUE,genomes$genome.genome_name))))
+ids = rbind(id.strains,id.biospec)
+ratk = ratk[ids$L1,]
+ratk$id.patric = genomes$genome.genome_id[ids$value]
 ratk = ratk[complete.cases(ratk),]
 
 # setup colors we'll use later
